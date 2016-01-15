@@ -476,6 +476,8 @@ class Dropbox.Client
         params.parent_rev = options.lastVersionTag
       else if options.parentRev or options.parent_rev
         params.parent_rev = options.parentRev or options.parent_rev
+      if options.noAutorename
+        params.autorename = 'false'
     # TODO: locale support would edit the params here
 
     xhr = new Dropbox.Util.Xhr 'POST',
@@ -507,6 +509,8 @@ class Dropbox.Client
         params.parent_rev = options.lastVersionTag
       else if options.parentRev or options.parent_rev
         params.parent_rev = options.parentRev or options.parent_rev
+      if options.noAutorename
+        params.autorename = 'false'
     # TODO: locale support would edit the params here
     xhr = new Dropbox.Util.Xhr 'POST',
                                "#{@_urls.putFile}/#{@_urlEncodePath(path)}"

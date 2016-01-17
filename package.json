@@ -1,9 +1,9 @@
 {
-  "name": "dropbox",
+  "name": "nebulab-dropbox",
   "version": "0.10.3",
   "description": "Client library for the Dropbox API",
   "keywords": ["dropbox", "filesystem", "storage"],
-  "homepage": "https://github.com/dropbox/dropbox-js",
+  "homepage": "https://github.com/nebulab-io/dropbox-js",
   "author": "Victor Costan <victor@costan.us> (http://www.costan.us)",
   "license": "MIT",
   "contributors": [
@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dropbox/dropbox-js.git"
+    "url": "https://github.com/nebulab-io/dropbox-js.git"
   },
   "bugs": {
-    "url": "https://github.com/dropbox/dropbox-js/issues"
+    "url": "https://github.com/nebulab-io/dropbox-js/issues"
   },
   "engines": {
     "node": ">= 0.6"
@@ -49,9 +49,5 @@
     "lib": "lib",
     "src": "src",
     "test": "test"
-  },
-  "scripts": {
-    "prepublish": "node node_modules/coffee-script/bin/cake build",
-    "test": "node node_modules/coffee-script/bin/cake test"
   }
 }
